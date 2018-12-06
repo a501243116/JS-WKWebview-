@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Carson_Ho</title>
+    <script>
+   function callJS(x){
+      alert(x);
+      return "ok";
+   }
+ function callIOS(){
+        window.webkit.messageHandlers.showMessage.postMessage("js调用了iOS中的showMessage方法");
+         }
+    </script>
+
+</head>
+
+<body>
+<font size = 44>点击按钮则调用callIOS函数</font>
+<button type="button" id="button1" onclick="callIOS()">调用iOS</button>
+</body>
+
+</html>
